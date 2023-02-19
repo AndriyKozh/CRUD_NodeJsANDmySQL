@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // read all
 app.get("/api/readData", (req, res) => {
-  const sqlQuery = "SELECT * FROM watch_history";
+  const sqlQuery = "SELECT * FROM testing";
 
   db.query(sqlQuery, (err, result) => {
     if (err) {
